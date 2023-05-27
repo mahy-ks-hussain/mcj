@@ -1,0 +1,11 @@
+C:\Users\mahyk\Code\mcj\IDReader\bin\Release\IDReader.exe.config
+C:\Users\mahyk\Code\mcj\IDReader\bin\Release\IDReader.exe
+C:\Users\mahyk\Code\mcj\IDReader\bin\Release\IDReader.pdb
+C:\Users\mahyk\Code\mcj\IDReader\obj\Release\IDReader.csproj.AssemblyReference.cache
+C:\Users\mahyk\Code\mcj\IDReader\obj\Release\IDReader.csproj.SuggestedBindingRedirects.cache
+C:\Users\mahyk\Code\mcj\IDReader\obj\Release\IDReader.frmIDReader.resources
+C:\Users\mahyk\Code\mcj\IDReader\obj\Release\IDReader.Properties.Resources.resources
+C:\Users\mahyk\Code\mcj\IDReader\obj\Release\IDReader.csproj.GenerateResource.cache
+C:\Users\mahyk\Code\mcj\IDReader\obj\Release\IDReader.csproj.CoreCompileInputs.cache
+C:\Users\mahyk\Code\mcj\IDReader\obj\Release\IDReader.exe
+C:\Users\mahyk\Code\mcj\IDReader\obj\Release\IDReader.pdb
