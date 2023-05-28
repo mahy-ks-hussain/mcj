@@ -35,7 +35,7 @@ namespace IDReader
 
             if(!directory.Exists)
             {
-                return "Directory not found!";
+                return "Directory (C:\\AGVIDReader\\Data) not found!";
             }
 
             if(directory.GetFiles().Length == 0)
@@ -58,9 +58,9 @@ namespace IDReader
             }
         }
 
-        public DataTable GetData()
+        public DataTable GetData(DataTable dt)
         {
-            DataTable dt = new DataTable("Data");
+            dt.Reset();
 
             foreach (string col in cols)
             {

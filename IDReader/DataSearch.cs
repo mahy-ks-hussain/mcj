@@ -18,7 +18,7 @@ namespace IDReader
         {
             StringBuilder result = new StringBuilder();
             string expr = "LoadID = '" + id +"'";
-            Console.WriteLine(expr);
+
             DataRow[] found = dt.Select(expr);
 
             if(found.Length == 0 )

@@ -22,7 +22,8 @@ namespace IDReader
             InitializeComponent();
             input = new DataInput();
             searcher = new DataSearch();
-            data = new DataTable();
+            data = new DataTable("Data");
+            tbcText.SelectedIndex = 0;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -31,6 +32,16 @@ namespace IDReader
             tbcText.SelectedIndex = 0;
             rtbResult.Text = searcher.SearchForID(data, tbSearch.Text);
             if(rtbResult.Text.Contains("Not Found")) { rtbResult.ForeColor = Color.Red; }
+        }
+
+        private void tbSearch_Enter(object sender, EventArgs e)
+        {
+            ActiveForm.AcceptButton = btnSearch;
+        }
+
+        private void tbSearch_Leave(object sender, EventArgs e)
+        {
+            ActiveForm.AcceptButton = null;
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -42,12 +53,10 @@ namespace IDReader
                 tbSearch.Enabled = false;
                 return;
             }
-            data = input.GetData();
+            input.GetData(data);
             btnSearch.Enabled = true;
             tbSearch.Enabled = true;
             rtbResult.ForeColor = Color.Black;
-            tbcText.SelectedIndex = 1;
-            //for debugging, delete this later
             var writer = new StringWriter();
             data.WriteXml(writer);
             rtbRaw.Text = writer.ToString();

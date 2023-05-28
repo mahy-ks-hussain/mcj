@@ -41,9 +41,9 @@
             this.fllyCurrFile = new System.Windows.Forms.FlowLayoutPanel();
             this.lbStatus = new System.Windows.Forms.Label();
             this.fllyData = new System.Windows.Forms.FlowLayoutPanel();
-            this.rtbResult = new System.Windows.Forms.RichTextBox();
             this.tbcText = new System.Windows.Forms.TabControl();
             this.tabSearch = new System.Windows.Forms.TabPage();
+            this.rtbResult = new System.Windows.Forms.RichTextBox();
             this.tabRaw = new System.Windows.Forms.TabPage();
             this.rtbRaw = new System.Windows.Forms.RichTextBox();
             this.tblyMain.SuspendLayout();
@@ -194,16 +194,6 @@
             this.fllyData.Size = new System.Drawing.Size(978, 679);
             this.fllyData.TabIndex = 1;
             // 
-            // rtbResult
-            // 
-            this.rtbResult.ForeColor = System.Drawing.Color.Black;
-            this.rtbResult.Location = new System.Drawing.Point(0, 0);
-            this.rtbResult.Name = "rtbResult";
-            this.rtbResult.ReadOnly = true;
-            this.rtbResult.Size = new System.Drawing.Size(968, 651);
-            this.rtbResult.TabIndex = 3;
-            this.rtbResult.Text = "";
-            // 
             // tbcText
             // 
             this.tbcText.Controls.Add(this.tabSearch);
@@ -224,6 +214,16 @@
             this.tabSearch.TabIndex = 0;
             this.tabSearch.Text = "Search Results";
             this.tabSearch.UseVisualStyleBackColor = true;
+            // 
+            // rtbResult
+            // 
+            this.rtbResult.ForeColor = System.Drawing.Color.Black;
+            this.rtbResult.Location = new System.Drawing.Point(0, 0);
+            this.rtbResult.Name = "rtbResult";
+            this.rtbResult.ReadOnly = true;
+            this.rtbResult.Size = new System.Drawing.Size(968, 651);
+            this.rtbResult.TabIndex = 3;
+            this.rtbResult.Text = "";
             // 
             // tabRaw
             // 
@@ -248,11 +248,14 @@
             // 
             // frmIDReader
             // 
+            this.AcceptButton = this.btnSearch;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 761);
             this.Controls.Add(this.tblyMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmIDReader";
             this.Text = "AGV ID Reader";
             this.tblyMain.ResumeLayout(false);
